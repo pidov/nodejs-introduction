@@ -25,7 +25,18 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1> What we'll learn?</h1>
+					Introduction to Node.js and express
+				</section>
+				<section>
+					<h1> A few notes </h1>
+					<ul>
+						<li>I tend to speak very fast.</li>
+						<li>The best way to learn is to tell something wrong to a bunch of people</li>
+						<li>The slides expect familiarity with JavaScript and key JavaScript concetps</li>
+					</ul>
+				</section>
+				<section>
+					<h1> The plan </h1>
 					<ul>
 						<li>What is Node.js?</li>
 						<li>Use some of the core Node.js modules</li>
@@ -43,7 +54,8 @@
 				<section>
 					<h1> What is NodeJS? </h1>
 					<p>
-						Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+						Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and... <br>
+						... blah blah blah
 					</p>
 					<h2> I almost understand this.</h2>
 				</section>
@@ -81,7 +93,23 @@ sudo apt-get install -y build-essential
 				<section>
 					<h1> Before we start </h1>
 					<ul>
-						<li>The <a href="https://nodejs.org/api/globals.html">global object</a></li>
+						<li>
+							The <a href="https://nodejs.org/api/globals.html">global object</a> <br>
+								<small>is called "global" and is <strong>not really</strong> global.</small>
+						</li>
+						<li>
+							Modules and require
+							<pre><code data-noescape >
+// foo.js
+module.exports = function() {
+  return 'foo';
+}
+
+//bar.js
+var foo = require('foo');
+console.log(foo()) // Logs foo
+							</pre></code>
+						</li>
 					</ul>
 				</section>
 
@@ -90,7 +118,7 @@ sudo apt-get install -y build-essential
 					https://github.com/sindresorhus/awesome-npm
 					http://expressjs.com/en/api.html
 					https://nodejs.org/api/globals.html
-					
+
 				</section>
 			</div>
 		</div>
