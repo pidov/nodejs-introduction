@@ -99,6 +99,15 @@ sudo apt-get install -y build-essential
 						</li>
 						<li>
 							Scope differences
+							<pre><code data-noescape >
+// Browser
+var foo = 'bar';
+window.foo === 'foo' //true
+
+// Node
+var foo = 'bar';
+global.foo === 'foo' //false
+							</pre></code>
 						</li>
 						<li>
 							Modules and require
@@ -133,10 +142,10 @@ console.log(foo()) // Logs foo
 							<a href="https://github.com/sindresorhus/awesome-npm">Awesome npm</a>
 						</li>
 					</ul>
-					
-					
-					
-					
+
+
+
+
 				</section>
 			</div>
 		</div>
